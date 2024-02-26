@@ -1,0 +1,105 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#container {
+    background-image: linear-gradient(to right, orange,violet,white,yellow,violet);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 550;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 19px;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#computer:hover{
+    font-weight: 650;
+    color: #4ad32f;
+    background-color: #000000;
+}
+
+#player:hover{
+    font-weight: 650;
+    color: #4ad32f;
+    background-color: #000000;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin: 42px 82px;
+
+    background-color: brown;
+    border-radius: 10px;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    color: #000000;
+    background-color: aqua;
+
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+
+.cell:hover {
+    background-color: #f0f0f0;
+}
+
+#status {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+#reset {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 19px;
+    transition: background-color 0.3s ease;
+    font-weight: 700;
+}
+
+#reset:hover {
+    background-color: #4ad32f;
+    color: #333;
+    font-weight: 700;
+}
+
+#player-options {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
